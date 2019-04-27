@@ -14,14 +14,15 @@ let milkshake = new MenuItem('Strawbeery Shake', 'Strawburry', 'SMK008', true);
 let fries = new MenuItem('Sweet Fries', 'Salty', 'CSD008', false);
 
 
-console.log(burger);
-console.log(milkshake);
-console.log(fries);
+// console.log(burger);
+// console.log(milkshake);
+// console.log(fries);
 
-// Object.entries(burger, salad).forEach(([key, value]) => {
-//   if (key != 'menuList')
-//     console.log(`${key}: ${value}`)
-//   });
+[burger, milkshake, fries].forEach(function (menuList) {
+Object.entries(menuList).forEach(([key, value]) => {
+ // if (key != 'menuList')
+    console.log(`${key}: ${value}`)
+  })});
 
 
 
